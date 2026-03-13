@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "electronics",
+      "title": "Wireless Headphones Pro",
+      "description": "Premium noise-cancelling headphones with 30-hour battery life",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+      "originalPrice": 4999,
+      "discountPrice": 2999,
+      "discount": 40
+    },
+    {
+      "id": 2,
+      "category": "electronics",
+      "title": "Smart Watch Ultra",
+      "description": "Advanced fitness tracking with heart rate monitor and GPS",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
+      "originalPrice": 15999,
+      "discountPrice": 9999,
+      "discount": 37
+    },
+    {
+      "id": 3,
+      "category": "electronics",
+      "title": "USB-C Fast Charging Cable",
+      "description": "High-speed 100W charging cable for all USB-C devices",
+      "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400&h=300&fit=crop",
+      "originalPrice": 599,
+      "discountPrice": 299,
+      "discount": 50
+    },
+    {
+      "id": 4,
+      "category": "electronics",
+      "title": "Wireless Keyboard",
+      "description": "Mechanical keyboard with RGB lighting and long battery",
+      "image": "https://images.unsplash.com/photo-1587829191301-69e7e45dc5d8?w=400&h=300&fit=crop",
+      "originalPrice": 3499,
+      "discountPrice": 1999,
+      "discount": 43
+    },
+    {
+      "id": 5,
+      "category": "electronics",
+      "title": "4K Webcam",
+      "description": "Professional 4K webcam perfect for streaming and video calls",
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=300&fit=crop",
+      "originalPrice": 5999,
+      "discountPrice": 3499,
+      "discount": 42
+    },
+    {
+      "id": 6,
+      "category": "fashion",
+      "title": "Premium Cotton T-Shirt",
+      "description": "100% organic cotton comfortable t-shirt for everyday wear",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop",
+      "originalPrice": 999,
+      "discountPrice": 499,
+      "discount": 50
+    },
+    {
+      "id": 7,
+      "category": "fashion",
+      "title": "Classic Blue Jeans",
+      "description": "Durable denim jeans with perfect fit and fade-resistant color",
+      "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=400&h=300&fit=crop",
+      "originalPrice": 2499,
+      "discountPrice": 1499,
+      "discount": 40
+    },
+    {
+      "id": 8,
+      "category": "fashion",
+      "title": "Leather Jacket Pro",
+      "description": "Genuine leather jacket with premium finish and style",
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=400&h=300&fit=crop",
+      "originalPrice": 8999,
+      "discountPrice": 5999,
+      "discount": 33
+    },
+    {
+      "id": 9,
+      "category": "fashion",
+      "title": "Sports Hoodie",
+      "description": "Comfortable polyester hoodie perfect for gym and casual wear",
+      "image": "https://images.unsplash.com/photo-1556821552-5f6ba8c85fa2?w=400&h=300&fit=crop",
+      "originalPrice": 1799,
+      "discountPrice": 999,
+      "discount": 44
+    },
+    {
+      "id": 10,
+      "category": "books",
+      "title": "Web Development Complete Guide",
+      "description": "Master HTML, CSS, JavaScript and modern web frameworks",
+      "image": "https://images.unsplash.com/photo-1507842217343-583f20270319?w=400&h=300&fit=crop",
+      "originalPrice": 599,
+      "discountPrice": 299,
+      "discount": 50
+    },
+    {
+      "id": 11,
+      "category": "books",
+      "title": "JavaScript: The Definitive Guide",
+      "description": "Comprehensive guide to advanced JavaScript programming techniques",
+      "image": "https://images.unsplash.com/photo-1516979187457-635ffe35ff15?w=400&h=300&fit=crop",
+      "originalPrice": 799,
+      "discountPrice": 399,
+      "discount": 50
+    },
+    {
+      "id": 12,
+      "category": "books",
+      "title": "UI/UX Design Fundamentals",
+      "description": "Learn principles of effective user interface and experience design",
+      "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&h=300&fit=crop",
+      "originalPrice": 699,
+      "discountPrice": 349,
+      "discount": 50
+    },
+    {
+      "id": 13,
+      "category": "books",
+      "title": "React & Node.js Development",
+      "description": "Build full-stack applications with React and Node.js",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+      "originalPrice": 899,
+      "discountPrice": 449,
+      "discount": 50
+    },
+    {
+      "id": 14,
+      "category": "home",
+      "title": "Premium Coffee Maker",
+      "description": "Automatic coffee maker with programmable timer and keep warm",
+      "image": "https://images.unsplash.com/photo-1517668808822-9ebb02ae2a0e?w=400&h=300&fit=crop",
+      "originalPrice": 3999,
+      "discountPrice": 2499,
+      "discount": 37
+    },
+    {
+      "id": 15,
+      "category": "home",
+      "title": "LED Table Lamp",
+      "description": "Modern LED lamp with 3 brightness levels and USB charging",
+      "image": "https://images.unsplash.com/photo-1565636192335-14c9fcc96b0d?w=400&h=300&fit=crop",
+      "originalPrice": 1299,
+      "discountPrice": 849,
+      "discount": 34
+    },
+    {
+      "id": 16,
+      "category": "home",
+      "title": "Stainless Steel Knife Set",
+      "description": "Professional 6-piece knife set with premium quality handles",
+      "image": "https://images.unsplash.com/photo-1587381052846-4a42a8b56d0d?w=400&h=300&fit=crop",
+      "originalPrice": 2999,
+      "discountPrice": 1499,
+      "discount": 50
+    },
+    {
+      "id": 17,
+      "category": "home",
+      "title": "Air Purifier",
+      "description": "HEPA filter air purifier for clean and fresh air",
+      "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=300&fit=crop",
+      "originalPrice": 8999,
+      "discountPrice": 5499,
+      "discount": 39
+    },
+    {
+      "id": 18,
+      "category": "sports",
+      "title": "Yoga Mat Premium",
+      "description": "Non-slip yoga mat with extra cushioning for comfort",
+      "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400&h=300&fit=crop",
+      "originalPrice": 1499,
+      "discountPrice": 899,
+      "discount": 40
+    },
+    {
+      "id": 19,
+      "category": "sports",
+      "title": "Adjustable Dumbbells Set",
+      "description": "20kg adjustable dumbbells with carrying case included",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop",
+      "originalPrice": 4999,
+      "discountPrice": 2999,
+      "discount": 40
+    },
+    {
+      "id": 20,
+      "category": "sports",
+      "title": "Professional Running Shoes",
+      "description": "Lightweight running shoes with gel cushioning and breathable mesh",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop",
+      "originalPrice": 3999,
+      "discountPrice": 2499,
+      "discount": 37
+    },
+    {
+      "id": 21,
+      "category": "sports",
+      "title": "Resistance Bands Set",
+      "description": "5-piece resistance band set for strength training and stretching",
+      "image": "https://images.unsplash.com/photo-1598289431662-3921b937e896?w=400&h=300&fit=crop",
+      "originalPrice": 1199,
+      "discountPrice": 699,
+      "discount": 42
+    }
+  ]
+}

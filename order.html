@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details - ShopHub</title>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🛍️ ShopHub</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon">
+                    <span class="cart-badge">0</span>
+                    🛒 Cart
+                </div>
+                <button class="login-btn">👤 Login</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title">📋 Order Details</h1>
+
+        <div class="order-wrapper">
+            <!-- Order Form Section -->
+            <section class="order-form-section">
+                <div class="form-card">
+                    <h2>Shipping Information</h2>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 9876543210">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required placeholder="123 Main Street">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required placeholder="New York">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <input type="text" id="state" name="state" required placeholder="NY">
+                            </div>
+                            <div class="form-group">
+                                <label for="zipcode">ZIP Code *</label>
+                                <input type="text" id="zipcode" name="zipcode" required placeholder="10001">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" required placeholder="India">
+                        </div>
+
+                        <h2 style="margin-top: 30px;">Payment Method</h2>
+
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="creditcard" checked>
+                                <span class="payment-label">
+                                    <strong>💳 Credit/Debit Card</strong>
+                                    <small>Visa, Mastercard, American Express</small>
+                                </span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="upi">
+                                <span class="payment-label">
+                                    <strong>📱 UPI</strong>
+                                    <small>Google Pay, PhonePe, Paytm</small>
+                                </span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="netbanking">
+                                <span class="payment-label">
+                                    <strong>🏦 Net Banking</strong>
+                                    <small>All major Indian banks</small>
+                                </span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="cod">
+                                <span class="payment-label">
+                                    <strong>💰 Cash on Delivery</strong>
+                                    <small>Pay when you receive</small>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                            <label for="termsAccepted">I agree to the Terms & Conditions and Privacy Policy</label>
+                        </div>
+
+                        <button type="submit" class="btn-place-order" id="placeOrderBtn">Place Order</button>
+                        <a href="cart.html" class="btn-back-to-cart">Back to Cart</a>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Order Summary Section -->
+            <section class="order-summary-section">
+                <div class="summary-card">
+                    <h2>Order Summary</h2>
+                    
+                    <div class="order-items" id="orderItems">
+                        <!-- Items will be populated here -->
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-item">
+                        <span>Subtotal:</span>
+                        <span id="summarySubtotal">₹0</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Discount:</span>
+                        <span id="summaryDiscount" class="discount-text">-₹0</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Shipping:</span>
+                        <span id="summaryShipping">FREE</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Tax (5%):</span>
+                        <span id="summaryTax">₹0</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-item total">
+                        <span>Total Amount:</span>
+                        <span id="summaryTotal">₹0</span>
+                    </div>
+
+                    <div class="order-info">
+                        <p><strong>✓ Secure Checkout</strong></p>
+                        <p>Your payment information is encrypted and secure.</p>
+                        <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                            Order ID will be generated after successful payment.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Order Confirmation Modal -->
+    <div id="confirmationModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="confirmation-icon">✓</div>
+            <h2>Order Placed Successfully!</h2>
+            <div class="confirmation-details">
+                <p><strong>Order ID:</strong> <span id="orderId"></span></p>
+                <p><strong>Customer Name:</strong> <span id="customerName"></span></p>
+                <p><strong>Email:</strong> <span id="customerEmail"></span></p>
+                <p><strong>Total Amount:</strong> <span id="totalAmount"></span></p>
+                <p><strong>Payment Method:</strong> <span id="paymentMethodDisplay"></span></p>
+                <p><strong>Status:</strong> <span class="status-badge">Confirmed</span></p>
+            </div>
+            <div class="confirmation-message">
+                <p>🎉 Thank you for your order!</p>
+                <p>A confirmation email has been sent to your registered email address.</p>
+                <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                    Your order will be dispatched within 24-48 hours.
+                </p>
+            </div>
+            <button class="btn-continue-shopping" id="continueShopping">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About ShopHub</h3>
+                <p>Your one-stop destination for quality products at great prices. Shop with confidence!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@shophub.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <p>Address: 123 Shopping St, NY 10001</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopHub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List - Ecommerce Store</title>
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🛍️ ShopHub</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon">
+                    <span class="cart-badge">0</span>
+                    🛒 Cart
+                </div>
+                <button class="login-btn">👤 Login</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- Category Section -->
+            <aside class="category-section">
+                <h2>Categories</h2>
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">
+                        All Products
+                    </button>
+                    <button class="category-btn" data-category="electronics">
+                        📱 Electronics
+                    </button>
+                    <button class="category-btn" data-category="fashion">
+                        👕 Fashion
+                    </button>
+                    <button class="category-btn" data-category="books">
+                        📚 Books
+                    </button>
+                    <button class="category-btn" data-category="home">
+                        🏠 Home & Kitchen
+                    </button>
+                    <button class="category-btn" data-category="sports">
+                        ⚽ Sports
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Product Section -->
+            <section class="product-section">
+                <div class="product-grid" id="productGrid">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About ShopHub</h3>
+                <p>Your one-stop destination for quality products at great prices. Shop with confidence!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@shophub.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <p>Address: 123 Shopping St, NY 10001</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopHub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+</body>
+</html>
