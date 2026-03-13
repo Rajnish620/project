@@ -59,69 +59,17 @@ async function loadProducts() {
     }
 }
 
-// Get DOM elements
-const categoryBtns = document.querySelectorAll('.category-btn');
-const productGrid = document.getElementById('productGrid');
-const cartBadge = document.querySelector('.cart-badge');
-const cartIcon = document.querySelector('.cart-icon');
-const loginBtn = document.querySelector('.login-btn');
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
 // Current active category
 let activeCategory = 'all';
 
-// Cart icon click - Navigate to cart page
-cartIcon.addEventListener('click', function() {
-    window.location.href = 'cart.html';
-});
-
-// Login button functionality
-loginBtn.addEventListener('click', function() {
-    alert('👤 Login feature will be implemented soon!');
-});
-
-// Hamburger menu toggle
-hamburger.addEventListener('click', function() {
-    navMenu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-});
-
-// Close menu when link is clicked
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function() {
-        navMenu.classList.remove('active');
-        hamburger.classList.remove('active');
-    });
-});
-
-// Close menu when clicking outside
-document.addEventListener('click', function(event) {
-    const isClickInsideMenu = navMenu.contains(event.target);
-    const isClickInsideHamburger = hamburger.contains(event.target);
-    
-    if (!isClickInsideMenu && !isClickInsideHamburger && navMenu.classList.contains('active')) {
-        navMenu.classList.remove('active');
-        hamburger.classList.remove('active');
-    }
-});
-
-// Event listeners for category buttons
-categoryBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-        // Remove active class from all buttons
-        categoryBtns.forEach(b => b.classList.remove('active'));
-        
-        // Add active class to clicked button
-        this.classList.add('active');
-        
-        // Update active category
-        activeCategory = this.getAttribute('data-category');
-        
-        // Filter and display products
-        filterAndDisplayProducts();
-    });
-});
+// DOM elements (initialized in DOMContentLoaded)
+let categoryBtns;
+let productGrid;
+let cartBadge;
+let cartIcon;
+let loginBtn;
+let hamburger;
+let navMenu;
 
 // Filter products by category
 function filterAndDisplayProducts() {
@@ -212,6 +160,70 @@ function addToCart(product) {
 
 // Initialize - Load products on page load
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize DOM elements
+    categoryBtns = document.querySelectorAll('.category-btn');
+    productGrid = document.getElementById('productGrid');
+    cartBadge = document.querySelector('.cart-badge');
+    cartIcon = document.querySelector('.cart-icon');
+    loginBtn = document.querySelector('.login-btn');
+    hamburger = document.querySelector('.hamburger');
+    navMenu = document.querySelector('.nav-menu');
+    
+    // Initialize CartManager
     CartManager.init();
+    
+    // Cart icon click - Navigate to cart page
+    cartIcon.addEventListener('click', function() {
+        window.location.href = 'cart.html';
+    });
+
+    // Login button functionality
+    loginBtn.addEventListener('click', function() {
+        alert('👤 Login feature will be implemented soon!');
+    });
+
+    // Hamburger menu toggle
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+
+    // Close menu when link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickInsideHamburger = hamburger.contains(event.target);
+        
+        if (!isClickInsideMenu && !isClickInsideHamburger && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    });
+
+    // Event listeners for category buttons
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Update active category
+            activeCategory = this.getAttribute('data-category');
+            
+            // Filter and display products
+            filterAndDisplayProducts();
+        });
+    });
+    
+    // Load products
     loadProducts();
 });
