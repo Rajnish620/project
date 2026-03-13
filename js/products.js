@@ -47,7 +47,7 @@ const CartManager = {
 // Load products from JSON file
 async function loadProducts() {
     try {
-        const response = await fetch('../data.json');
+        const response = await fetch('./data.json');
         const data = await response.json();
         products = data.products;
         
